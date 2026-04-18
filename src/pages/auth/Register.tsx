@@ -88,7 +88,7 @@ export default function Register() {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-foreground font-display">Open an Account</h1>
-              <p className="text-muted-foreground mt-1">Join NexusBank today</p>
+              <p className="text-muted-foreground mt-1">Join ApextfbBank today</p>
             </div>
           </div>
 
@@ -163,7 +163,7 @@ export default function Register() {
         </div>
       </div>
       <div className="text-center pb-6">
-        <p className="text-xs text-muted-foreground">NexusBank v1.0</p>
+        <p className="text-xs text-muted-foreground">ApextfbBank v1.0</p>
       </div>
     </div>
   );
