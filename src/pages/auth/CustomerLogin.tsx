@@ -97,7 +97,7 @@ export default function CustomerLogin() {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-foreground font-display">Welcome Back</h1>
-              <p className="text-muted-foreground mt-1">Sign in to NexusBank</p>
+              <p className="text-muted-foreground mt-1">Sign in to ApextfbBank</p>
             </div>
           </div>
 
@@ -213,7 +213,7 @@ export default function CustomerLogin() {
       
       {/* Version */}
       <div className="text-center pb-6">
-        <p className="text-xs text-muted-foreground">NexusBank v1.0</p>
+        <p className="text-xs text-muted-foreground">ApextfbBank v1.0</p>
       </div>
     </div>
   );
