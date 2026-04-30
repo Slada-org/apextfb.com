@@ -285,7 +285,7 @@ export default function SendMoney() {
                 <Globe className="w-7 h-7 text-accent" />
               </div>
               <div className="flex-1">
-                <p className="font-semibold text-foreground text-lg">International Wire</p>
+                <p className="font-semibold text-foreground text-lg">Interbank Funds Transfer</p>
                 <p className="text-sm text-muted-foreground mt-1">
                   Transfer to accounts worldwide. May take 1-5 business days.
                 </p>
