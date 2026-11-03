@@ -169,16 +169,16 @@ export default function CustomerDetail() {
       if (balanceError) throw balanceError;
 
       // Create credit transaction
-      const reference = `FUND-${Date.now()}-${Math.random().toString(36).substr(2, 9).toUpperCase()}`;
-      await supabase.from('transactions').insert({
-        customer_id: customerId,
-        type: 'credit',
-        amount,
-        description: fundDescription || 'Self deposit',
-        reference,
-        status: 'completed' as any,
-        sender_name: 'Ounion Trust Bank',
-      });
+      // const reference = `FUND-${Date.now()}-${Math.random().toString(36).substr(2, 9).toUpperCase()}`;
+      // await supabase.from('transactions').insert({
+      //   customer_id: customerId,
+      //   type: 'credit',
+      //   amount,
+      //   description: fundDescription || 'Self deposit',
+      //   reference,
+      //   status: 'completed' as any,
+      //     sender_name: 'Apex Bank',
+      // });
 
       // Audit log
       await supabase.from('audit_logs').insert({
@@ -196,7 +196,7 @@ export default function CustomerDetail() {
       });
 
       queryClient.invalidateQueries({ queryKey: ['admin-customers'] });
-      queryClient.invalidateQueries({ queryKey: ['admin-customer-transactions', customerId] });
+      // queryClient.invalidateQueries({ queryKey: ['admin-customer-transactions', customerId] });
       toast.success(`Account funded with $${amount.toFixed(2)}`);
       setShowFundDialog(false);
       setFundAmount('');
