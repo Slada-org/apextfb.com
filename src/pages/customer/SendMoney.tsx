@@ -267,9 +267,9 @@ export default function SendMoney() {
                 <Building2 className="w-7 h-7 text-primary" />
               </div>
               <div className="flex-1">
-                <p className="font-semibold text-foreground text-lg">Domestic Wire</p>
+                <p className="font-semibold text-foreground text-lg">Same Bank Transfer</p>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Transfer within the United States. Typically arrives same day.
+                  Transfer within ApexBank. Typically arrives same day.
                 </p>
               </div>
             </button>
@@ -315,7 +315,7 @@ export default function SendMoney() {
         <div className="p-4 space-y-6">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-xs px-3 py-1 rounded-full font-medium bg-primary/10 text-primary">
-              Domestic Wire
+              Same Bank Transfer
             </span>
           </div>
 
